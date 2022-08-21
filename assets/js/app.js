@@ -1,9 +1,25 @@
-  const { createApp } = Vue
+// one way----------------
+  // const { createApp } = Vue
+  // createApp({
+  //   data() {
+  //     return {
+  //       message: 'Hello Nasir!'
+  //     }
+  //   }
+  // }).mount('#app')
 
-  createApp({
-    data() {
+  // another way-----------
+  const app = Vue.createApp({
+    data(){
       return {
-        message: 'Hello Nasir!'
+        message : "hello billo"
       }
     }
-  }).mount('#app')
+
+  });
+
+  app.mount('#app')
+
+
+
+
